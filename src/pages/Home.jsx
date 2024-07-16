@@ -1,8 +1,9 @@
+import { BgVideo } from "../components/BgVideo"
 
 export const Home = () => {
   return (
     <div>
-      Home
+      <BgVideo />
     </div>
   )
 }
