@@ -15,7 +15,7 @@ export const Navbar = () => {
   }, [location]);
 
   return (
-    <div className="border h-[70px] px-4 py-2 flex items-center justify-center relative z-50 bg-white">
+    <div className="fixed top-0 left-0 right-0 h-[70px] px-4 py-2 flex items-center justify-center z-50 bg-white shadow-md">
       {/* mobile navbar */}
       <div className="container mx-auto md:hidden px-6">
         <div className="flex justify-between items-center">
