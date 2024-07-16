@@ -1,4 +1,4 @@
-import videoBg from '../assets/videoBg.mp4';
+import videoBg from '../assets/backgroundVideo.mp4';
 
 export const BgVideo = () => {
   return (
