@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 export const Logo = () => {
   return (
     <div className=" text-2xl tracking-tighter font-bold">
-      <Link to={'/'}>
-        MANE
-      </Link>
+      <Link to={'/'}>MANE</Link>
     </div>
-  )
-}
+  );
+};

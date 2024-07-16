@@ -1,10 +1,8 @@
-import { Routes, Route } from "react-router-dom";
-import { Home, Contact, Services, Stories, About } from "./pages/pages.js"
-import { Navbar } from "./components/Navbar.jsx";
-
+import { Routes, Route } from 'react-router-dom';
+import { Home, Contact, Services, Stories, About } from './pages/pages.js';
+import { Navbar } from './components/Navbar.jsx';
 
 function App() {
-
   return (
     <div>
       <Navbar />
@@ -16,7 +14,7 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
