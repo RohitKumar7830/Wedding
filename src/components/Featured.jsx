@@ -2,6 +2,7 @@ import Vogue from "../assets/VOGUE.svg";
 import Brides from "../assets/BRIDES.svg";
 import TheNewYorkTimes from "../assets/TheNewYorkTimes.svg";
 import Cosmopolitian from "../assets/COSMOPOLITIAN.svg";
+import { ReviewCarousel } from "./Review"
 
 export const Featured = () => {
   return (
@@ -63,6 +64,42 @@ export const Featured = () => {
             ))}
           </div>
         </div>
+
+        {/* stories section */}
+        <div className="flex flex-col items-center justify-center flex-1 feature:flex-row mt-10">
+          <div className="flex border-t-4 flex-grow w-[80%] feature:w-[20%] border-slate-600 mx-10"></div>
+          <div className="text-4xl py-3 text-center">We Create Stories</div>
+          <div className="flex border-t-4 flex-grow w-[80%] feature:w-[20%] border-slate-600 mx-10"></div>
+        </div>
+        {/* 
+        <div className="flex flex-col feature:flex-row items-center justify-center gap-8 p-6 max-w-7xl mx-auto"> */}
+        {/* Image container */}
+        {/* <div className="w-full feature:w-1/2">
+            <img
+              src="https://assets.website-files.com/60867261e3a2bf1d23a88274/62e0f8cb589d9a79c1b93bc1_gallery%20img%206-min-p-500.jpg"
+              alt="Bridesmaids with floral bouquets"
+              className="w-full h-auto object-cover"
+            />
+          </div> */}
+
+        {/* Text content container */}
+        {/* <div className="w-full feature:w-1/2 flex flex-col">
+            <div className="text-4xl font-serif mb-4">&quot;</div>
+            <p className="text-lg mb-4 italic">
+              I am so happy that I chose Mane to organize my wedding. The team was so friendly and helpful throughout the process, and did a wonderful job of helping me get everything done in a very short time frame.
+            </p>
+            <a href="#" className="text-sm uppercase tracking-wider text-blue-600 hover:underline">
+              VIEW STORY &gt;
+            </a> */}
+        {/* Navigation arrows */}
+        {/* <div className="flex justify-end mt-4 gap-2">
+              <button className="bg-black text-white w-8 h-8 flex items-center justify-center">&lt;</button>
+              <button className="bg-black text-white w-8 h-8 flex items-center justify-center">&gt;</button>
+            </div>
+          </div>
+        </div> */}
+
+        <ReviewCarousel />
 
 
       </div>
