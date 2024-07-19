@@ -37,7 +37,7 @@ export const Navbar = () => {
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: 'auto', opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.3 }}
               className="overflow-hidden absolute top-16 left-0 w-full bg-white z-40 border-b-2"
             >
               <div className="p-4 flex flex-col items-center justify-center text-gray-600 tracking-widest">
