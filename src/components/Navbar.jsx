@@ -30,7 +30,7 @@ export const Navbar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 right-0 h-[70px] px-4 py-2 flex items-center justify-center transition-all duration-600 ease-in-out ${scrolled ? 'bg-white shadow-md z-50 text-black' : 'bg-transparent z-10 text-white'
+      className={`fixed top-0 left-0 right-0 h-[70px] px-4 py-2 flex items-center justify-center transition-all duration-300 ease-in-out ${scrolled ? 'bg-white shadow-md z-50 text-black' : 'bg-transparent z-10 text-white'
         }`}
     >
       {/* mobile navbar */}
