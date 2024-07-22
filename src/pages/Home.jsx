@@ -3,8 +3,10 @@ import { Featured } from '../components/Featured';
 
 export const Home = () => {
   return (
-    <div className='overflow-x-hidden flex flex-col justify-center items-center min-h-screen'>
-      <BgVideo />
+    <div className='overflow-x-hidden'>
+      <div className="h-screen">
+        <BgVideo />
+      </div>
       <Featured />
     </div>
   );

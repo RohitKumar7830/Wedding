@@ -25,9 +25,9 @@ export const BgVideo = () => {
         muted
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
-      <div className="flex flex-col justify-center items-center relative top-[30%] text-white gap-y-8">
-        <div className="font-thin tracking-widest">LET US MAKE</div>
-        <div className="text-6xl flex flex-wrap tracking-wide items-center justify-center text-center font-serif m-4">
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
+        <div className="font-thin tracking-widest mb-8">LET US MAKE</div>
+        <div className="text-4xl md:text-6xl flex flex-wrap tracking-wide items-center justify-center text-center font-serif m-4">
           {letters.map((letter, index) => (
             <motion.span
               key={index}
@@ -42,7 +42,7 @@ export const BgVideo = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center absolute bottom-16 text-white gap-y-8">
+      <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-white">
         <div className='bg-white h-12 w-7 rounded-3xl flex items-center justify-center'>
           <IoIosArrowDown className='text-slate-500 size-6 animate-bounce' />
         </div>
