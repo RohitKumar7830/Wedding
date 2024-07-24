@@ -16,7 +16,7 @@ export const Footer = () => {
           </p>
         </div>
 
-        <div className="w-full md:w-1/2 flex gap-x-[20%] feature:items-center feature:justify-center">
+        <div className="w-full md:w-1/2 flex gap-x-[20%] md:items-center md:justify-center">
           <div className="flex flex-col gap-y-2">
             <h3 className="font-semibold text-gray-700 mb-2">Company</h3>
             <Link to="/stories" className={`text-gray-500 ${linkClasses}`}>Stories</Link>
