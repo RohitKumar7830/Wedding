@@ -55,7 +55,8 @@ export const Featured = () => {
                     alt={`${card.title} image`}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-30 transition-opacity duration-300 group-hover:bg-opacity-40" />
+                  <div className="absolute inset-0 bg-black bg-opacity-30
+                  transition-opacity duration-300 group-hover:bg-opacity-70" />
                 </div>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
                   <h2 className="text-3xl feature:text-4xl font-serif mb-2">{card.title}</h2>
@@ -72,34 +73,8 @@ export const Featured = () => {
           <div className="text-4xl py-3 text-center">We Create Stories</div>
           <div className="flex border-t-4 flex-grow w-[80%] feature:w-[20%] border-slate-600 mx-10"></div>
         </div>
-        {/* 
-        <div className="flex flex-col feature:flex-row items-center justify-center gap-8 p-6 max-w-7xl mx-auto"> */}
-        {/* Image container */}
-        {/* <div className="w-full feature:w-1/2">
-            <img
-              src="https://assets.website-files.com/60867261e3a2bf1d23a88274/62e0f8cb589d9a79c1b93bc1_gallery%20img%206-min-p-500.jpg"
-              alt="Bridesmaids with floral bouquets"
-              className="w-full h-auto object-cover"
-            />
-          </div> */}
 
-        {/* Text content container */}
-        {/* <div className="w-full feature:w-1/2 flex flex-col">
-            <div className="text-4xl font-serif mb-4">&quot;</div>
-            <p className="text-lg mb-4 italic">
-              I am so happy that I chose Mane to organize my wedding. The team was so friendly and helpful throughout the process, and did a wonderful job of helping me get everything done in a very short time frame.
-            </p>
-            <a href="#" className="text-sm uppercase tracking-wider text-blue-600 hover:underline">
-              VIEW STORY &gt;
-            </a> */}
-        {/* Navigation arrows */}
-        {/* <div className="flex justify-end mt-4 gap-2">
-              <button className="bg-black text-white w-8 h-8 flex items-center justify-center">&lt;</button>
-              <button className="bg-black text-white w-8 h-8 flex items-center justify-center">&gt;</button>
-            </div>
-          </div>
-        </div> */}
-
+        {/* review section */}
         <ReviewCarousel />
 
         <div className="relative flex flex-col h-full w-full">
