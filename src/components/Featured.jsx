@@ -3,7 +3,7 @@ import Brides from "../assets/BRIDES.svg";
 import TheNewYorkTimes from "../assets/TheNewYorkTimes.svg";
 import Cosmopolitian from "../assets/COSMOPOLITIAN.svg";
 import { ReviewCarousel } from "./Review"
-import { Experience } from "./Experience";
+import { Footer } from "./footer";
 
 export const Featured = () => {
   return (
@@ -55,7 +55,8 @@ export const Featured = () => {
                     alt={`${card.title} image`}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-30 transition-opacity duration-300 group-hover:bg-opacity-40" />
+                  <div className="absolute inset-0 bg-black bg-opacity-30
+                  transition-opacity duration-300 group-hover:bg-opacity-70" />
                 </div>
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
                   <h2 className="text-3xl feature:text-4xl font-serif mb-2">{card.title}</h2>
@@ -76,8 +77,39 @@ export const Featured = () => {
         {/* review section */}
         <ReviewCarousel />
 
-        {/* experience section */}
-        <Experience />
+        <div className="relative flex flex-col h-full w-full">
+          <img
+            className="w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Wedding"
+          />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-30 gap-y-2">
+            <div className="text-3xl md:text-5xl font-serif drop-shadow-md   feature:pb-4">
+              <div >
+                Make your wedding
+              </div>
+              <div>
+                dreams come true
+              </div>
+            </div>
+            <div className="text-sm sm:text-base md:text-lg lg:text-xl px-4">
+              We will take care of everything for you — from event planning and curation to design and production
+            </div>
+            <button className="bg-black px-4 py-2 sm:px-6 sm:py-3 mt-4 hover:bg-slate-700 transition duration-200 font-thin">
+              GET IN TOUCH
+            </button>
+          </div>
+        </div>
+
+        {/* divider */}
+        <div
+          className="border border-b-2 border-black m-2"
+        >
+        </div>
+
+        {/* footer */}
+        <Footer />
+
 
       </div>
     </div>
