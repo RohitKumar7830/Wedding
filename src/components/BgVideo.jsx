@@ -10,7 +10,7 @@ export const BgVideo = () => {
     hidden: { opacity: 0 },
     visible: (i = 1) => ({
       opacity: 1,
-      transition: { staggerChildren: 0.3, delayChildren: 0.4 * i },
+      transition: { staggerChildren: 0.2, delayChildren: 0.4 * i },
     }),
   };
 
