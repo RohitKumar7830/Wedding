@@ -5,8 +5,9 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 
-export const Navbar = () => {
+export const HomeNavbar = () => {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
   // Close the menu when the location changes (page navigates)
@@ -14,15 +15,29 @@ export const Navbar = () => {
     setOpen(false);
   }, [location]);
 
+  // Add scroll event listener to track scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 70);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div
-      className="fixed top-0 left-0 right-0 h-[70px] px-4 py-2 flex items-center justify-center transition-all duration-300 ease-in-out bg-white shadow-md z-50 text-black bg-transparent "
+      className={`fixed top-0 left-0 right-0 h-[70px] px-4 py-2 flex items-center justify-center transition-all duration-300 ease-in-out ${scrolled ? 'bg-white shadow-md z-50 text-black' : 'bg-transparent z-10 text-white'
+        }`}
     >
       {/* mobile navbar */}
-      < div className="container mx-auto md:hidden px-6" >
+      <div className="container mx-auto md:hidden px-6">
         <div className="flex justify-between items-center">
           <div>
-            <Logo color={'black'} />
+            <Logo color={scrolled ? 'black' : 'white'} />
           </div>
           <div className="font-semibold">
             <button
@@ -59,39 +74,39 @@ export const Navbar = () => {
             </motion.div>
           )}
         </AnimatePresence>
-      </div >
+      </div>
 
       {/* desktop navbar */}
-      < div className="container hidden md:flex max-w-7xl items-center justify-between mx-auto" >
+      <div className="container hidden md:flex max-w-7xl items-center justify-between mx-auto">
         <div className="flex items-center">
-          <Logo color={'white'} />
+          <Logo color={scrolled ? 'black' : 'white'} />
         </div>
         <div className="flex gap-x-6 items-center">
           <div className="group">
-            <Link to="/services" className="text-black hover:text-gray-600">
+            <Link to="/services" className={scrolled ? "text-black hover:text-gray-600" : "text-white hover:text-gray-300"}>
               <span className="group-hover:underline">SERVICES</span>
             </Link>
           </div>
           <div className="group">
-            <Link to="/stories" className="text-black hover:text-gray-600">
+            <Link to="/stories" className={scrolled ? "text-black hover:text-gray-600" : "text-white hover:text-gray-300"}>
               <span className="group-hover:underline">STORIES</span>
             </Link>
           </div>
           <div className="group">
-            <Link to="/about" className="text-black hover:text-gray-600 font-bold">
+            <Link to="/about" className={scrolled ? "text-black hover:text-gray-600 font-bold" : "text-white hover:text-gray-300 font-bold"}>
               <span className="group-hover:underline">ABOUT</span>
             </Link>
           </div>
           <div className="group">
             <Link
               to="/contact"
-              className="bg-black text-white px-4 py-2 hover:underline hover:bg-gray-800"
+              className={scrolled ? "bg-black text-white px-4 py-2 hover:underline hover:bg-gray-800" : "bg-white text-black px-4 py-2 hover:underline hover:bg-gray-300"}
             >
               <span className="group-hover:underline">GET IN TOUCH</span>
             </Link>
           </div>
         </div>
-      </div >
-    </div >
+      </div>
+    </div>
   );
 };
