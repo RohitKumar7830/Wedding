@@ -694,7 +694,7 @@ export const ServicesComponent = () => {
                       className=' overflow-hidden h-[12rem] w-full'
                       src={card.imgSrc}
                     />
-                    <div className='absolute left-0 top-0 bg-pink-500 text-white  p-1'>
+                    <div className='absolute top-0 right-0 bg-gradient-to-r from-amber-300 to-orange-600 text-white  p-1'>
                       ♔ HandPicked
                     </div>
                   </div>

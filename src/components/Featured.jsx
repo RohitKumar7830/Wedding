@@ -131,14 +131,7 @@ export const Featured = () => {
           </div>
         </div>
 
-        {/* divider */}
-        <div
-          className="border border-b-2 border-black m-2"
-        >
-        </div>
 
-        {/* footer */}
-        <Footer />
 
 
       </div >
