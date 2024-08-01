@@ -705,6 +705,7 @@ export const ServicesComponent = () => {
                     </div>
                     <div className='w-full flex items-center justify-end gap-x-2 p-2'>
                       <FaStar size={24} className="fill-current text-pink-500" />
+                      {card.rating}
                       <div className='text-sm text-gray-500'>
                         ({card.totalReviews} reviews)
                       </div>
