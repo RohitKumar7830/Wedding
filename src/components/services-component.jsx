@@ -741,16 +741,16 @@ export const ServicesComponent = () => {
                           <TooltipTrigger>
                             +{card.tags.length}more
                           </TooltipTrigger>
-                          <TooltipContent className='w-full h-full p-0'>
+                          <TooltipContent side='left' className='w-full h-full p-0 bg-black/90 border-none'>
                             {
                               card.tags.map((tag) => {
                                 return (
-                                  <p
+                                  <li
                                     key={tag}
-                                    className='pl-2 shadow-sm hover:shadow-md text-sm feature:text-md pr-4 py-1  '
+                                    className='pl-2 text-sm feature:text-md pr-4 py-1 text-white '
                                   >
                                     {tag}
-                                  </p>
+                                  </li>
                                 )
                               })
                             }
