@@ -7,7 +7,7 @@ export const Footer = () => {
   const iconClasses = "text-xl hover:text-blue-500 transition-colors duration-300";
 
   return (
-    <footer className="px-4 md:px-8">
+    <footer className="px-4 md:px-8 pb-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-y-8 md:gap-y-0">
         <div className="w-full md:w-1/4">
           <Logo />
