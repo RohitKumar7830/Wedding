@@ -75,7 +75,7 @@ export const ServicesComponent = () => {
 
 
       {/* location cards */}
-      <div className='flex flex-wrap gap-x-6 gap-y-4 pb-6'>
+      <div className='flex m-auto flex-wrap gap-x-6 gap-y-4 pb-6'>
         {locationData.map((data) => (
           <Link
             onClick={() => handleLocationDataClick(data.location)}
@@ -101,19 +101,19 @@ export const ServicesComponent = () => {
 
 
       {/* photographer cards */}
-      <div className='flex flex-wrap  gap-x-6 mx-auto items-center gap-y-3 py-3'>
+      <div className='flex flex-wrap flex-grow gap-x-6 mx-auto items-center gap-y-3 py-3'>
 
         {
           cardsData.map((card) => {
             return (
               <Link
                 to={`/services/photographer/${card.id}`}
-                className='w-full feature:w-[31.5%] h-[25rem] overflow-hidden ' key={card.id}>
+                className='w-full m-auto feature:w-[31.5%] h-[25rem] overflow-hidden hover:shadow-xl ' key={card.id}>
                 <div className='flex flex-col flex-wrap h-full  shadow-sm hover:shadow-lg'>
 
                   <div className='relative'>
                     <img
-                      className=' overflow-hidden h-[12rem] w-full'
+                      className='w-full h-full object-contain group-hover:scale-125 group-hover:rotate-3 duration-500'
                       loading='lazy'
                       src={card.imgSrc}
                     />
@@ -122,7 +122,7 @@ export const ServicesComponent = () => {
                     </div>
                   </div>
 
-                  <div className='flex justify-between items-center pl-2'>
+                  <div className='flex justify-between items-center pl-2 w-full'>
                     <div className='truncate w-full'>
                       {card.photographerName}
                     </div>
