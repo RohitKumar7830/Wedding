@@ -673,3 +673,127 @@ export const imagesData = [
     alt: 'Couple silhouette against starry sky'
   }
 ];
+
+export const videosData = [
+  {
+    id: 1,
+    src: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
+    thumbnail:
+      'https://images.pexels.com/photos/2806700/pexels-photo-2806700.jpeg?auto=compress&cs=tinysrgb&w=400',
+    title: 'Romantic Beach Wedding',
+    description: 'Couple walking hand in hand on a sunset beach',
+    duration: '0:15',
+    views: 1200,
+    likes: 85
+  },
+  {
+    id: 2,
+    src: 'https://pixabay.com/videos/download/video-21510_tiny.mp4',
+    thumbnail:
+      'https://images.pexels.com/photos/3766104/pexels-photo-3766104.jpeg?auto=compress&cs=tinysrgb&w=400',
+    title: 'Elegant Wedding Rings',
+    description: 'Close-up of wedding rings on a reflective surface',
+    duration: '0:11',
+    views: 980,
+    likes: 72
+  },
+  {
+    id: 3,
+    src: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
+    thumbnail:
+      'https://images.pexels.com/photos/2745224/pexels-photo-2745224.jpeg?auto=compress&cs=tinysrgb&w=400',
+    title: "Bride's Preparation",
+    description: 'Bride getting ready with her bridesmaids',
+    duration: '0:20',
+    views: 1500,
+    likes: 110
+  },
+  {
+    id: 4,
+    src: 'https://pixabay.com/videos/download/video-29890_tiny.mp4',
+    thumbnail:
+      'https://images.pexels.com/photos/758898/pexels-photo-758898.png?auto=compress&cs=tinysrgb&w=400',
+    title: 'First Dance',
+    description: 'Newlyweds sharing their first dance',
+    duration: '0:13',
+    views: 2200,
+    likes: 165
+  },
+  {
+    id: 5,
+    src: 'https://pixabay.com/videos/download/video-34255_tiny.mp4',
+    thumbnail:
+      'https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=400',
+    title: 'Wedding Bouquet Toss',
+    description: 'Bride tossing the bouquet to waiting bridesmaids',
+    duration: '0:09',
+    views: 890,
+    likes: 58
+  },
+  {
+    id: 6,
+    src: 'https://pixabay.com/videos/download/video-14101_tiny.mp4',
+    thumbnail:
+      'https://images.pexels.com/photos/414660/pexels-photo-414660.jpeg?auto=compress&cs=tinysrgb&w=400',
+    title: 'Wedding Car Decoration',
+    description: 'Classic car decorated for a wedding',
+    duration: '0:20',
+    views: 750,
+    likes: 45
+  },
+  {
+    id: 7,
+    src: 'https://pixabay.com/videos/download/video-29739_tiny.mp4',
+    thumbnail:
+      'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=400',
+    title: 'Cake Cutting Ceremony',
+    description: 'Bride and groom cutting their wedding cake',
+    duration: '0:12',
+    views: 1800,
+    likes: 132
+  },
+  {
+    id: 8,
+    src: 'https://pixabay.com/videos/download/video-31377_tiny.mp4',
+    thumbnail:
+      'https://images.pexels.com/photos/1045541/pexels-photo-1045541.jpeg?auto=compress&cs=tinysrgb&w=400',
+    title: 'Wedding Vows Exchange',
+    description: 'Couple exchanging vows during the ceremony',
+    duration: '0:15',
+    views: 2500,
+    likes: 198
+  },
+  {
+    id: 9,
+    src: 'https://pixabay.com/videos/download/video-15181_tiny.mp4',
+    thumbnail:
+      'https://images.pexels.com/photos/157757/wedding-dresses-fashion-character-bride-157757.jpeg?auto=compress&cs=tinysrgb&w=400',
+    title: 'Reception Party',
+    description: 'Guests dancing and celebrating at the wedding reception',
+    duration: '0:16',
+    views: 1100,
+    likes: 79
+  },
+  {
+    id: 10,
+    src: 'https://pixabay.com/videos/download/video-41758_tiny.mp4',
+    thumbnail:
+      'https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&w=400',
+    title: 'Wedding Venue Decoration',
+    description: 'Beautifully decorated wedding venue',
+    duration: '0:14',
+    views: 950,
+    likes: 68
+  },
+  {
+    id: 11,
+    src: 'https://pixabay.com/videos/download/video-26478_tiny.mp4',
+    thumbnail:
+      'https://images.pexels.com/photos/540522/pexels-photo-540522.jpeg?auto=compress&cs=tinysrgb&w=400',
+    title: 'Romantic Couple Photoshoot',
+    description: 'Newlyweds posing for photos in a picturesque setting',
+    duration: '0:10',
+    views: 1350,
+    likes: 95
+  }
+];
