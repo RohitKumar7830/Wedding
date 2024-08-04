@@ -101,93 +101,75 @@ export const ServicesComponent = () => {
 
 
       {/* photographer cards */}
-      <div className='flex flex-wrap flex-grow gap-x-6 mx-auto items-center gap-y-3 py-3'>
+      <div className='grid grid-cols-1 feature:grid-cols-2 md:grid-cols-3 gap-6 py-6'>
+        {cardsData.map((card) => (
+          <Link
+            to={`/services/photographer/${card.id}`}
+            className='group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300'
+            key={card.id}
+          >
+            <div className='flex flex-col h-full'>
+              <div className='relative overflow-hidden'>
+                <img
+                  className='w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300'
+                  loading='lazy'
+                  src={card.imgSrc}
+                  alt={card.photographerName}
+                />
+                <div className='absolute top-2 right-2 bg-gradient-to-r from-amber-300 to-orange-600 text-white text-xs font-bold px-2 py-1 rounded-full'>
+                  ♔ HandPicked
+                </div>
+              </div>
 
-        {
-          cardsData.map((card) => {
-            return (
-              <Link
-                to={`/services/photographer/${card.id}`}
-                className='w-full m-auto feature:w-[31.5%] h-[25rem] overflow-hidden hover:shadow-xl ' key={card.id}>
-                <div className='flex flex-col flex-wrap h-full  shadow-sm hover:shadow-lg'>
-
-                  <div className='relative'>
-                    <img
-                      className='w-full h-full object-contain group-hover:scale-125 group-hover:rotate-3 duration-500'
-                      loading='lazy'
-                      src={card.imgSrc}
-                    />
-                    <div className='absolute top-0 right-0 bg-gradient-to-r from-amber-300 to-orange-600 text-white  p-1'>
-                      ♔ HandPicked
-                    </div>
-                  </div>
-
-                  <div className='flex justify-between items-center pl-2 w-full'>
-                    <div className='truncate w-full'>
-                      {card.photographerName}
-                    </div>
-                    <div className='w-full flex items-center justify-end gap-x-2 p-2'>
-                      <FaStar size={24} className="fill-current text-pink-500" />
-                      {card.rating}
-                      <div className='text-sm text-gray-500'>
-                        ({card.totalReviews} reviews)
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className='w-full text-slate-500 font-semibold pb-2'>
-                    📍{card.location.local}, {card.location.district}
-                  </div>
-
-                  <div className='w-full pl-2 pb-2 text-slate-400 text-sm font-thin'>
-                    {card.service}
-                  </div>
-
-                  <div className='w-full pb-2 flex items-center gap-x-1 pl-2 text-slate-700'>
-                    <span className='flex items-center justify-center font-semibold text-lg'>
-                      ₹ {card.pricingPerDay}
-                    </span>
-                    <span className='flex items-center justify-center text-sm'>
-                      per day
-                    </span>
-                  </div>
-
-                  <div className='w-full pb-2 flex items-center gap-x-1 px-2 truncate '>
-                    <div className='bg-slate-700 text-xs text-white px-3 py-1 rounded-2xl truncate'>
-                      {card.tags[0]}
-                    </div>
-                    <div className='bg-slate-700 text-xs text-white px-3 py-1 rounded-2xl truncate'>
-                      {card.tags[1]}
-                    </div>
-                    <div className='bg-slate-700 text-xs text-white px-3 py-1 rounded-2xl '>
-                      <TooltipProvider>
-                        <Tooltip>
-                          <TooltipTrigger>
-                            +{card.tags.length}more
-                          </TooltipTrigger>
-                          <TooltipContent side='left' className='w-full h-full p-0 bg-black/90 border-none'>
-                            {
-                              card.tags.map((tag) => {
-                                return (
-                                  <li
-                                    key={tag}
-                                    className='pl-2 text-sm feature:text-md pr-4 py-1 text-white '
-                                  >
-                                    {tag}
-                                  </li>
-                                )
-                              })
-                            }
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
-                    </div>
+              <div className='p-4 flex-grow'>
+                <div className='flex justify-between items-center mb-2'>
+                  <h3 className='text-lg font-semibold truncate'>{card.photographerName}</h3>
+                  <div className='flex items-center'>
+                    <FaStar className="text-yellow-400 mr-1" />
+                    <span className='font-bold'>{card.rating}</span>
+                    <span className='text-sm text-gray-500 ml-1'>({card.totalReviews})</span>
                   </div>
                 </div>
-              </Link>
-            )
-          })
-        }
+
+                <p className='text-sm text-gray-600 mb-2'>
+                  📍 {card.location.local}, {card.location.district}
+                </p>
+
+                <p className='text-sm text-gray-500 mb-2'>{card.service}</p>
+
+                <p className='text-lg font-bold text-indigo-600 mb-3'>
+                  ₹ {card.pricingPerDay} <span className='text-sm font-normal text-gray-500'>per day</span>
+                </p>
+
+                <div className='flex flex-wrap gap-2'>
+                  {card.tags.slice(0, 2).map((tag) => (
+                    <span key={tag} className='bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full'>
+                      {tag}
+                    </span>
+                  ))}
+                  {card.tags.length > 2 && (
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger className='bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full'>
+                          +{card.tags.length - 2} more
+                        </TooltipTrigger>
+                        <TooltipContent side='left' className='bg-white p-2 rounded shadow-lg border border-gray-200'>
+                          <ul>
+                            {card.tags.slice(2).map((tag) => (
+                              <li key={tag} className='text-sm text-gray-700 py-1'>
+                                {tag}
+                              </li>
+                            ))}
+                          </ul>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  )}
+                </div>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
 
 
