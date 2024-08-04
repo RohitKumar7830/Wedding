@@ -604,3 +604,72 @@ export const CardsData = [
     pricingPerDay: '75,000'
   }
 ];
+
+export const imagesData = [
+  {
+    id: 1,
+    src: 'https://plus.unsplash.com/premium_photo-1690148812608-9942834931a1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
+    caption: 'Two hearts, one love story',
+    alt: 'Bride and groom embracing at sunset'
+  },
+  {
+    id: 2,
+    src: 'https://images.unsplash.com/photo-1634729108541-516d16ddceec?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
+    caption: 'Forever begins today',
+    alt: 'Couple holding hands during ceremony'
+  },
+  {
+    id: 3,
+    src: 'https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
+    caption: 'Love, laughter, and happily ever after',
+    alt: 'Newlyweds laughing together'
+  },
+  {
+    id: 4,
+    src: 'https://images.unsplash.com/photo-1634729108619-3576b0db8090?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
+    caption: 'A moment of pure joy',
+    alt: 'Bride twirling in her dress'
+  },
+  {
+    id: 5,
+    src: 'https://plus.unsplash.com/premium_photo-1690148812608-9942834931a1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
+    caption: 'The beginning of forever',
+    alt: 'Couple walking down the aisle'
+  },
+  {
+    id: 6,
+    src: 'https://plus.unsplash.com/premium_photo-1664530452596-e1c17e342876?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
+    caption: 'Sealed with a kiss',
+    alt: "Bride and groom's first kiss as newlyweds"
+  },
+  {
+    id: 7,
+    src: 'https://images.unsplash.com/photo-1634692843550-8ddff2a880ad?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D',
+    caption: 'Dancing into a new chapter',
+    alt: "Couple's first dance at reception"
+  },
+  {
+    id: 8,
+    src: 'https://images.unsplash.com/photo-1634729108706-bbae478dcfa1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D',
+    caption: 'Love in full bloom',
+    alt: 'Bride holding a beautiful bouquet'
+  },
+  {
+    id: 9,
+    src: 'https://plus.unsplash.com/premium_photo-1690148812608-9942834931a1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D',
+    caption: 'Together is a beautiful place to be',
+    alt: 'Couple overlooking a scenic view'
+  },
+  {
+    id: 10,
+    src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D',
+    caption: 'Cheers to love, laughter, and happily ever after',
+    alt: 'Wedding toast with champagne glasses'
+  },
+  {
+    id: 11,
+    src: 'https://images.unsplash.com/photo-1513084012612-05b28297d5bd?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHdlZGRpbmd8ZW58MHx8MHx8fDA%3D',
+    caption: 'A love story written in the stars',
+    alt: 'Couple silhouette against starry sky'
+  }
+];
