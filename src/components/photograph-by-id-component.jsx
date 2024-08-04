@@ -16,7 +16,8 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Separator } from "@/components/ui/separator"
 import { getDataById } from '@/lib/getDataById';
-import { imagesData } from '@/data/data';
+import { ImageGallery } from './services_components/image-gallery';
+import { VideoGallery } from './services_components/video-gallery';
 
 const PhotographByIdComponent = ({ id }) => {
 
@@ -128,9 +129,11 @@ const PhotographByIdComponent = ({ id }) => {
           </TabsList>
           <Separator />
           <TabsContent value="images" className='h-full'>
-            <ImageComponent />
+            <ImageGallery />
           </TabsContent>
-          <TabsContent value="videos">Videos section</TabsContent>
+          <TabsContent value="videos">
+            <VideoGallery />
+          </TabsContent>
           <TabsContent value="wedding">Wedding section</TabsContent>
         </Tabs>
       </div>
@@ -140,32 +143,3 @@ const PhotographByIdComponent = ({ id }) => {
 }
 
 export default PhotographByIdComponent;
-
-const ImageComponent = () => {
-  return (
-    <div className="w-full h-full mb-10"> {/* Adjust pt-20 as needed to account for your navbar height */}
-      <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 feature:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {imagesData.map((image) => (
-            <div
-              key={image.id}
-              className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-              <img
-                loading='lazy'
-                src={image.src}
-                alt={image.alt || "Gallery Image"}
-                className="w-full h-64 object-cover object-center transform hover:scale-105 transition-transform duration-300 ease-in-out"
-              />
-              {image.caption && (
-                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-sm">
-                  {image.caption}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
