@@ -13,17 +13,20 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Separator } from "@/components/ui/separator"
 import { getDataById } from '@/lib/getDataById';
+import { imagesData } from '@/data/data';
 
 const PhotographByIdComponent = ({ id }) => {
 
   const data = getDataById(id)
 
   return (
-    <div className='h-screen w-full bg-slate-100 p-2'>
+    <div className='h-full w-full p-4'>
 
       {/* breadcrumb component */}
-      <div className='pb-4'>
+      <div className='pb-4 font-semibold tracking-tight'>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -39,7 +42,7 @@ const PhotographByIdComponent = ({ id }) => {
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage> {data.photographerName}</BreadcrumbPage>
+              <BreadcrumbPage className='font-sans text-pink-600 font-bold tracking-wide'> {data.photographerName}</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -47,8 +50,8 @@ const PhotographByIdComponent = ({ id }) => {
 
 
       {/* image , info and pricing */}
-
-      <div className="flex flex-col feature:flex-row shadow-lg hover:shadow-2xl justify-between bg-white items-center gap-4 w-full">
+      <div className="flex flex-col feature:flex-row shadow-sm hover:shadow-lg  bg-white  gap-4 w-full mb-2 ">
+        {/* image */}
         <div className='w-full p-2'>
           <img
             loading='lazy'
@@ -56,9 +59,9 @@ const PhotographByIdComponent = ({ id }) => {
             className='w-full overflow-hidden border-transparent rounded-md'
           />
         </div>
-
-        <div className='w-full h-full px-4'>
-          <div className='w-full bg-white h-full py-2 px-2 mb-2'>
+        {/* info */}
+        <div className='w-full h-full px-4 py-2 '>
+          <div className='w-full h-full py-2 px-2 mb-2'>
             <div className="flex flex-row justify-between items-center">
               <div className="text-xl flex items-center justify-center font-semibold tracking-wide">
                 <div className="text-3xl flex items-center justify-center pb-2">📸</div>
@@ -75,7 +78,7 @@ const PhotographByIdComponent = ({ id }) => {
               </div>
             </div>
 
-            <div className='w-full text-slate-500 font-semibold pb-2'>
+            <div className='w-full h-full text-slate-500 font-semibold pb-2'>
               📍{data.location.local}, {data.location.district}, {data.location.state}
             </div>
           </div>
@@ -113,12 +116,56 @@ const PhotographByIdComponent = ({ id }) => {
 
           </div>
         </div>
+      </div>
 
-
+      {/* images, video and wedding */}
+      <div className="w-full h-full bg-white pt-8 px-2">
+        <Tabs defaultValue="images" className="flex flex-col w-full h-full">
+          <TabsList className='flex justify-center w-full gap-x-8 mx-auto  bg-white'>
+            <TabsTrigger value="images">Images</TabsTrigger>
+            <TabsTrigger value="videos">Videos</TabsTrigger>
+            <TabsTrigger value="wedding">Wedding</TabsTrigger>
+          </TabsList>
+          <Separator />
+          <TabsContent value="images" className='h-full'>
+            <ImageComponent />
+          </TabsContent>
+          <TabsContent value="videos">Videos section</TabsContent>
+          <TabsContent value="wedding">Wedding section</TabsContent>
+        </Tabs>
       </div>
 
     </div >
   )
 }
 
-export default PhotographByIdComponent
+export default PhotographByIdComponent;
+
+const ImageComponent = () => {
+  return (
+    <div className="w-full h-full mb-10"> {/* Adjust pt-20 as needed to account for your navbar height */}
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 feature:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {imagesData.map((image) => (
+            <div
+              key={image.id}
+              className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            >
+              <img
+                loading='lazy'
+                src={image.src}
+                alt={image.alt || "Gallery Image"}
+                className="w-full h-64 object-cover object-center transform hover:scale-105 transition-transform duration-300 ease-in-out"
+              />
+              {image.caption && (
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-sm">
+                  {image.caption}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
