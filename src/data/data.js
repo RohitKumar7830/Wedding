@@ -816,12 +816,12 @@ export const weddingGalleryData = [
       {
         url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+          'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+          'https://images.pexels.com/photos/1023233/pexels-photo-1023233.jpeg?auto=compress&cs=tinysrgb&w=400'
       }
     ]
   },
@@ -842,12 +842,12 @@ export const weddingGalleryData = [
       {
         url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+          'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+          'https://images.pexels.com/photos/1023233/pexels-photo-1023233.jpeg?auto=compress&cs=tinysrgb&w=400'
       }
     ]
   },
@@ -868,12 +868,12 @@ export const weddingGalleryData = [
       {
         url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+          'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+          'https://images.pexels.com/photos/1023233/pexels-photo-1023233.jpeg?auto=compress&cs=tinysrgb&w=400'
       }
     ]
   },
@@ -894,12 +894,12 @@ export const weddingGalleryData = [
       {
         url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+          'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+          'https://images.pexels.com/photos/1023233/pexels-photo-1023233.jpeg?auto=compress&cs=tinysrgb&w=400'
       }
     ]
   },
@@ -920,12 +920,12 @@ export const weddingGalleryData = [
       {
         url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+          'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+          'https://images.pexels.com/photos/1023233/pexels-photo-1023233.jpeg?auto=compress&cs=tinysrgb&w=400'
       }
     ]
   },
@@ -946,12 +946,12 @@ export const weddingGalleryData = [
       {
         url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+          'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+          'https://images.pexels.com/photos/1023233/pexels-photo-1023233.jpeg?auto=compress&cs=tinysrgb&w=400'
       }
     ]
   },
@@ -972,12 +972,12 @@ export const weddingGalleryData = [
       {
         url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+          'https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3lvdG8lMjBnYXJkZW5zfGVufDB8fDB8fHww'
       },
       {
         url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+          'https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=400'
       }
     ]
   },
@@ -998,12 +998,12 @@ export const weddingGalleryData = [
       {
         url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+          'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=400'
       },
       {
         url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
         thumbnail:
-          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+          'https://images.pexels.com/photos/1023233/pexels-photo-1023233.jpeg?auto=compress&cs=tinysrgb&w=400'
       }
     ]
   }
