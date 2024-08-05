@@ -797,3 +797,214 @@ export const videosData = [
     likes: 95
   }
 ];
+
+export const weddingGalleryData = [
+  {
+    id: 1,
+    coupleName: 'Emily & Michael',
+    weddingDate: '2023-06-15',
+    location: 'Sunset Beach Resort, Hawaii',
+    totalCharges: 350000,
+    theme: 'Tropical Paradise',
+    guests: 150,
+    photos: [
+      'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2glMjB3ZWRkaW5nfGVufDB8fDB8fHww',
+      'https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmVhY2glMjB3ZWRkaW5nfGVufDB8fDB8fHww',
+      'https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJlYWNoJTIwd2VkZGluZ3xlbnwwfHwwfHx8MA%3D%3D'
+    ],
+    videos: [
+      {
+        url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+      },
+      {
+        url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+      }
+    ]
+  },
+  {
+    id: 2,
+    coupleName: 'Sophia & Ethan',
+    weddingDate: '2023-09-22',
+    location: 'Château de Versailles, France',
+    totalCharges: 500000,
+    theme: 'Royal Elegance',
+    guests: 200,
+    photos: [
+      'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hhJUMzJUE4dGVhdXxlbnwwfHwwfHx8MA%3D%3D',
+      'https://images.unsplash.com/photo-1615038552039-e1b271f14ec8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hhJUMzJUE4dGVhdXxlbnwwfHwwfHx8MA%3D%3D',
+      'https://images.unsplash.com/photo-1621829845053-c8114fc01eb3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y291cGxlfGVufDB8fDB8fHww'
+    ],
+    videos: [
+      {
+        url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+      },
+      {
+        url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+      }
+    ]
+  },
+  {
+    id: 3,
+    coupleName: 'Olivia & James',
+    weddingDate: '2023-10-08',
+    location: 'Central Park, New York City',
+    totalCharges: 280000,
+    theme: 'Autumn Romance',
+    guests: 100,
+    photos: [
+      'https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2VudHJhbCUyMHBhcmt8ZW58MHx8MHx8fDA%3D',
+      'https://images.unsplash.com/photo-1621829845053-c8114fc01eb3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y291cGxlfGVufDB8fDB8fHww',
+      'https://images.unsplash.com/photo-1568515387631-8b650bbcdb90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNlbnRyYWwlMjBwYXJrfGVufDB8fDB8fHww'
+    ],
+    videos: [
+      {
+        url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+      },
+      {
+        url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+      }
+    ]
+  },
+  {
+    id: 4,
+    coupleName: 'Emma & Alexander',
+    weddingDate: '2023-12-31',
+    location: 'Ice Hotel, Sweden',
+    totalCharges: 420000,
+    theme: 'Winter Wonderland',
+    guests: 80,
+    photos: [
+      'https://images.unsplash.com/photo-1551655510-555dc3be8633?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aWNlJTIwaG90ZWx8ZW58MHx8MHx8fDA%3D',
+      'https://images.unsplash.com/photo-1621829845053-c8114fc01eb3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y291cGxlfGVufDB8fDB8fHww',
+      'https://images.unsplash.com/photo-1543932927-a9def13a0e7c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y291cGxlfGVufDB8fDB8fHww'
+    ],
+    videos: [
+      {
+        url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+      },
+      {
+        url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+      }
+    ]
+  },
+  {
+    id: 5,
+    coupleName: 'Ava & William',
+    weddingDate: '2024-02-14',
+    location: 'Taj Mahal, India',
+    totalCharges: 380000,
+    theme: 'Timeless Romance',
+    guests: 120,
+    photos: [
+      'https://images.unsplash.com/photo-1564507592333-c60657eea523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFqJTIwbWFoYWx8ZW58MHx8MHx8fDA%3D',
+      'https://images.unsplash.com/photo-1548013146-72479768bada?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGFqJTIwbWFoYWx8ZW58MHx8MHx8fDA%3D',
+      'https://images.unsplash.com/photo-1543932927-a9def13a0e7c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y291cGxlfGVufDB8fDB8fHww'
+    ],
+    videos: [
+      {
+        url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+      },
+      {
+        url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+      }
+    ]
+  },
+  {
+    id: 6,
+    coupleName: 'Isabella & Daniel',
+    weddingDate: '2024-04-20',
+    location: 'Santorini, Greece',
+    totalCharges: 450000,
+    theme: 'Mediterranean Dream',
+    guests: 100,
+    photos: [
+      'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2FudG9yaW5pfGVufDB8fDB8fHww',
+      'https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2FudG9yaW5pfGVufDB8fDB8fHww',
+      'https://images.unsplash.com/photo-1571406252241-db0280bd36cd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2FudG9yaW5pfGVufDB8fDB8fHww'
+    ],
+    videos: [
+      {
+        url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+      },
+      {
+        url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+      }
+    ]
+  },
+  {
+    id: 7,
+    coupleName: 'Mia & Christopher',
+    weddingDate: '2024-06-08',
+    location: 'Edinburgh Castle, Scotland',
+    totalCharges: 550000,
+    theme: 'Highland Fairytale',
+    guests: 180,
+    photos: [
+      'https://images.unsplash.com/photo-1543932927-a9def13a0e7c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y291cGxlfGVufDB8fDB8fHww',
+      'https://images.unsplash.com/photo-1481841580057-e2b9927a05c6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y291cGxlfGVufDB8fDB8fHww',
+      'https://plus.unsplash.com/premium_photo-1676690618005-c6bfc28347b9?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y291cGxlfGVufDB8fDB8fHww'
+    ],
+    videos: [
+      {
+        url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+      },
+      {
+        url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+      }
+    ]
+  },
+  {
+    id: 8,
+    coupleName: 'Charlotte & Matthew',
+    weddingDate: '2024-08-17',
+    location: 'Kyoto Gardens, Japan',
+    totalCharges: 400000,
+    theme: 'Cherry Blossom Serenity',
+    guests: 90,
+    photos: [
+      'https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a3lvdG8lMjBnYXJkZW5zfGVufDB8fDB8fHww',
+      'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8a3lvdG8lMjBnYXJkZW5zfGVufDB8fDB8fHww',
+      'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a3lvdG8lMjBnYXJkZW5zfGVufDB8fDB8fHww'
+    ],
+    videos: [
+      {
+        url: 'https://pixabay.com/videos/download/video-33194_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/871524009-50527d8f4e3c5b5f9b8b54eb3e6849e4e7e9e893fe0ba1e5013cdb8c5697bdb9-d_640x360.jpg'
+      },
+      {
+        url: 'https://pixabay.com/videos/download/video-28285_tiny.mp4',
+        thumbnail:
+          'https://i.vimeocdn.com/video/829409630-58bae853e39c10de5140b4ad36abfef136b5d04c776a6dbdedb9ca7b19ffc9a3-d_640x360.jpg'
+      }
+    ]
+  }
+];
