@@ -138,7 +138,6 @@ const PhotographByIdComponent = ({ id }) => {
           <TabsContent value="wedding">
             <WeddingGallery />
           </TabsContent>
-          <TabsContent value="wedding">Wedding section</TabsContent>
         </Tabs>
       </div>
 
