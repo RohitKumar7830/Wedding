@@ -1,16 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { weddingGalleryData } from '@/data/data';
-import { CalendarDays, MapPin, Users, IndianRupee, Play } from 'lucide-react';
+import { CalendarDays, MapPin, Users, IndianRupee, Play, ChevronLeft, ChevronRight } from 'lucide-react';
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
-const WeddingGallery = () => {
-  const [activeMedia, setActiveMedia] = useState(null);
-
+export const WeddingGallery = () => {
   const formatDate = (dateString) => {
     return new Date(dateString).toLocaleDateString('en-US', {
       year: 'numeric',
@@ -61,52 +66,69 @@ const WeddingGallery = () => {
                     <TabsTrigger value="videos">Videos</TabsTrigger>
                   </TabsList>
                   <TabsContent value="photos" className="mt-4">
-                    <div className="grid grid-cols-3 gap-2">
-                      {wedding.photos.map((photo, index) => (
-                        <Dialog key={index}>
-                          <DialogTrigger>
-                            <AspectRatio ratio={1}>
-                              <img
-                                src={photo}
-                                alt={`${wedding.coupleName} wedding photo ${index + 1}`}
-                                className="w-full h-full object-cover rounded cursor-pointer hover:opacity-80 transition-opacity duration-300"
-                                onClick={() => setActiveMedia({ type: 'image', src: photo })}
-                              />
-                            </AspectRatio>
-                          </DialogTrigger>
-                          <DialogContent className="max-w-3xl">
-                            {activeMedia && activeMedia.type === 'image' && (
-                              <img src={activeMedia.src} alt="Wedding photo" className="w-full" />
-                            )}
-                          </DialogContent>
-                        </Dialog>
-                      ))}
-                    </div>
+                    <Carousel className="w-full">
+                      <CarouselContent>
+                        {wedding.photos.map((photo, index) => (
+                          <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4">
+                            <Dialog>
+                              <DialogTrigger asChild>
+                                <AspectRatio ratio={1} className="cursor-pointer">
+                                  <img
+                                    src={photo}
+                                    alt={`${wedding.coupleName} wedding photo ${index + 1}`}
+                                    className="w-full h-full object-cover rounded hover:opacity-80 transition-opacity duration-300"
+                                  />
+                                </AspectRatio>
+                              </DialogTrigger>
+                              <DialogContent className="max-w-3xl">
+                                <img src={photo} alt="Wedding photo" className="w-full" />
+                              </DialogContent>
+                            </Dialog>
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      <CarouselPrevious className="left-2 bg-white/80 hover:bg-white">
+                        <ChevronLeft className="w-6 h-6" />
+                      </CarouselPrevious>
+                      <CarouselNext className="right-2 bg-white/80 hover:bg-white">
+                        <ChevronRight className="w-6 h-6" />
+                      </CarouselNext>
+                    </Carousel>
                   </TabsContent>
                   <TabsContent value="videos" className="mt-4">
-                    <div className="grid grid-cols-2 gap-2">
-                      {wedding.videos.map((video, index) => (
-                        <Dialog key={index}>
-                          <DialogTrigger>
-                            <AspectRatio ratio={16 / 9}>
-                              <div className="relative w-full h-full bg-gray-200 rounded cursor-pointer hover:bg-gray-300 transition-colors duration-300 overflow-hidden">
-                                <img
-                                  src={video.thumbnail}
-                                  alt={`Video thumbnail ${index + 1}`}
-                                  className="w-full h-full object-cover"
-                                />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
-                                  <Play className="w-12 h-12 text-white" />
-                                </div>
-                              </div>
-                            </AspectRatio>
-                          </DialogTrigger>
-                          <DialogContent className="max-w-3xl">
-                            <video src={video.url} controls className="w-full" />
-                          </DialogContent>
-                        </Dialog>
-                      ))}
-                    </div>
+                    <Carousel className="w-full">
+                      <CarouselContent>
+                        {wedding.videos.map((video, index) => (
+                          <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4">
+                            <Dialog>
+                              <DialogTrigger asChild>
+                                <AspectRatio ratio={1} className="cursor-pointer">
+                                  <div className="relative w-full h-full bg-gray-200 rounded hover:bg-gray-300 transition-colors duration-300 overflow-hidden">
+                                    <img
+                                      src={video.thumbnail}
+                                      alt={`Video thumbnail ${index + 1}`}
+                                      className="w-full h-full object-cover"
+                                    />
+                                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+                                      <Play className="w-8 h-8 text-white" />
+                                    </div>
+                                  </div>
+                                </AspectRatio>
+                              </DialogTrigger>
+                              <DialogContent className="max-w-3xl">
+                                <video src={video.url} controls className="w-full" />
+                              </DialogContent>
+                            </Dialog>
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      <CarouselPrevious className="left-2 bg-white/80 hover:bg-white">
+                        <ChevronLeft className="w-6 h-6" />
+                      </CarouselPrevious>
+                      <CarouselNext className="right-2 bg-white/80 hover:bg-white">
+                        <ChevronRight className="w-6 h-6" />
+                      </CarouselNext>
+                    </Carousel>
                   </TabsContent>
                 </Tabs>
               </div>
@@ -117,5 +139,3 @@ const WeddingGallery = () => {
     </div>
   );
 };
-
-export default WeddingGallery;

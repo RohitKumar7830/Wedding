@@ -18,7 +18,7 @@ import { Separator } from "@/components/ui/separator"
 import { getDataById } from '@/lib/getDataById';
 import { ImageGallery } from './services_components/image-gallery';
 import { VideoGallery } from './services_components/video-gallery';
-import WeddingGallery from './services_components/wedding-gallery';
+import { WeddingGallery } from './services_components/wedding-gallery';
 
 const PhotographByIdComponent = ({ id }) => {
 
