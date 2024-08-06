@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { weddingGalleryData } from '@/data/data';
-import { CalendarDays, MapPin, Users, DollarSign, Play } from 'lucide-react';
+import { CalendarDays, MapPin, Users, IndianRupee, Play } from 'lucide-react';
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -21,7 +21,6 @@ const WeddingGallery = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h2 className="text-4xl font-bold mb-8 text-center">Wedding Galleries</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {weddingGalleryData.map((wedding) => (
           <Card key={wedding.id} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
@@ -50,7 +49,7 @@ const WeddingGallery = () => {
                       {wedding.guests} guests
                     </Badge>
                     <Badge variant="secondary" className="flex items-center gap-1">
-                      <DollarSign className="w-4 h-4" />
+                      <IndianRupee className="w-4 h-4" />
                       {wedding.totalCharges.toLocaleString()}
                     </Badge>
                   </div>
