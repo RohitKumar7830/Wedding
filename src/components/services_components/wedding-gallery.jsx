@@ -67,9 +67,9 @@ export const WeddingGallery = () => {
                   </TabsList>
                   <TabsContent value="photos" className="mt-4">
                     <Carousel className="w-full">
-                      <CarouselContent>
+                      <CarouselContent className="-ml-2 md:-ml-4">
                         {wedding.photos.map((photo, index) => (
-                          <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4">
+                          <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4">
                             <Dialog>
                               <DialogTrigger asChild>
                                 <AspectRatio ratio={1} className="cursor-pointer">
@@ -87,30 +87,30 @@ export const WeddingGallery = () => {
                           </CarouselItem>
                         ))}
                       </CarouselContent>
-                      <CarouselPrevious className="left-2 bg-white/80 hover:bg-white">
-                        <ChevronLeft className="w-6 h-6" />
+                      <CarouselPrevious className="left-2 bg-white/80 hover:bg-white hover:scale-125 ease-in-out duration-200 transition flex items-center justify-center">
+                        <ChevronLeft className="w-6 h-6 hover:scale-125" />
                       </CarouselPrevious>
-                      <CarouselNext className="right-2 bg-white/80 hover:bg-white">
-                        <ChevronRight className="w-6 h-6" />
+                      <CarouselNext className="right-2 bg-white/80 hover:bg-white hover:scale-125 ease-in-out duration-200 transition flex items-center justify-center">
+                        <ChevronRight className="w-6 h-6 hover:scale-125" />
                       </CarouselNext>
                     </Carousel>
                   </TabsContent>
                   <TabsContent value="videos" className="mt-4">
                     <Carousel className="w-full">
-                      <CarouselContent>
+                      <CarouselContent className="-ml-2 md:-ml-4">
                         {wedding.videos.map((video, index) => (
-                          <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4">
+                          <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4">
                             <Dialog>
                               <DialogTrigger asChild>
-                                <AspectRatio ratio={1} className="cursor-pointer">
-                                  <div className="relative w-full h-full bg-gray-200 rounded hover:bg-gray-300 transition-colors duration-300 overflow-hidden">
+                                <AspectRatio ratio={1} className="cursor-pointer group">
+                                  <div className="relative w-full h-full overflow-hidden rounded">
                                     <img
                                       src={video.thumbnail}
                                       alt={`Video thumbnail ${index + 1}`}
-                                      className="w-full h-full object-cover"
+                                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                                     />
-                                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
-                                      <Play className="w-8 h-8 text-white" />
+                                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-opacity duration-300 flex items-center justify-center">
+                                      <Play className="w-8 h-8 feature:h-12 w-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform scale-0 group-hover:scale-100" />
                                     </div>
                                   </div>
                                 </AspectRatio>
@@ -122,11 +122,11 @@ export const WeddingGallery = () => {
                           </CarouselItem>
                         ))}
                       </CarouselContent>
-                      <CarouselPrevious className="left-2 bg-white/80 hover:bg-white">
-                        <ChevronLeft className="w-6 h-6" />
+                      <CarouselPrevious className="left-2 bg-white/80 hover:bg-white hover:scale-125 ease-in-out duration-200 transition flex items-center justify-center">
+                        <ChevronLeft className="w-6 h-6 hover:scale-125" />
                       </CarouselPrevious>
-                      <CarouselNext className="right-2 bg-white/80 hover:bg-white">
-                        <ChevronRight className="w-6 h-6" />
+                      <CarouselNext className="right-2 bg-white/80 hover:bg-white hover:scale-125 ease-in-out duration-200 transition flex items-center justify-center">
+                        <ChevronRight className="w-6 h-6 hover:scale-125" />
                       </CarouselNext>
                     </Carousel>
                   </TabsContent>
