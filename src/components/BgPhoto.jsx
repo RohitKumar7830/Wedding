@@ -1,3 +1,4 @@
+import { IoIosArrowDown } from 'react-icons/io'
 
 export const BgPhoto = () => {
   return (
@@ -15,6 +16,11 @@ export const BgPhoto = () => {
         <div className="text-center text-2xl feature:text-4xl md:text-6xl font-semibold   tracking-wider">
           <div>Creating the best wedding </div>
           <div>experiences since 2010</div>
+        </div>
+      </div>
+      <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 text-white">
+        <div className='bg-white h-12 w-7 rounded-3xl flex items-center justify-center'>
+          <IoIosArrowDown className='text-slate-500 size-6 animate-bounce' />
         </div>
       </div>
     </div>

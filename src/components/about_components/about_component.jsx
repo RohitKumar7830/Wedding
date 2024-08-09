@@ -1,6 +1,8 @@
 import React from 'react'
 import { HomeNavbar } from '../HomeNavbar'
 import { BgPhoto } from '../BgPhoto'
+import { NewspaperSection } from '../NewsPaperSection'
+import { AboutFeatured } from './about_featured'
 
 export const About = () => {
   return (
@@ -9,6 +11,9 @@ export const About = () => {
       <div className="h-screen">
         <BgPhoto />
       </div>
+
+      {/* newspaper section */}
+      <AboutFeatured />
     </div>
   )
 }

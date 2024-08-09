@@ -1,9 +1,5 @@
-import Vogue from "../assets/VOGUE.svg";
-import Brides from "../assets/BRIDES.svg";
-import TheNewYorkTimes from "../assets/TheNewYorkTimes.svg";
-import Cosmopolitian from "../assets/COSMOPOLITIAN.svg";
 import { ReviewCarousel } from "./Review"
-import { Footer } from "./footer";
+import { NewspaperSection } from './NewsPaperSection';
 
 export const Featured = () => {
   return (
@@ -14,16 +10,7 @@ export const Featured = () => {
         </div>
 
         {/* Newspaper logos */}
-        <div className="flex items-center justify-center w-full gap-x-10 feature:gap-x-14 gap-y-10 md:gap-x-24">
-          <div className="flex flex-col px-4 md:px-0 feature:flex-row justify-between items-center gap-y-12 feature:gap-x-14 md:gap-x-24">
-            <img src={Vogue} />
-            <img src={TheNewYorkTimes} />
-          </div>
-          <div className="flex flex-col px-4 md:px-0 feature:flex-row justify-between items-center gap-y-12 feature:gap-x-14 md:gap-x-24">
-            <img src={Brides} />
-            <img src={Cosmopolitian} />
-          </div>
-        </div>
+        <NewspaperSection />
 
         {/* Text info */}
         <div className="flex flex-col items-center justify-center flex-1 feature:flex-row mt-10">
@@ -130,9 +117,6 @@ export const Featured = () => {
             </button>
           </div>
         </div>
-
-
-
 
       </div >
     </div >
