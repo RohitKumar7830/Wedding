@@ -12,7 +12,7 @@ export const AboutFeatured = () => {
 
       <Team />
 
-      {/* <Stories /> */}
+      <Stories />
 
     </div>
   )

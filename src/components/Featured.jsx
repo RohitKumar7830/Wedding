@@ -1,5 +1,6 @@
 import { ReviewCarousel } from "./Review"
 import { NewspaperSection } from './NewsPaperSection';
+import { Stories } from './stories';
 
 export const Featured = () => {
   return (
@@ -84,39 +85,8 @@ export const Featured = () => {
           </div>
         </div>
 
-        {/* stories section */}
-        <div className="flex flex-col items-center justify-center flex-1 feature:flex-row mt-10">
-          <div className="flex border-t-4 flex-grow w-[80%] feature:w-[20%] border-slate-600 mx-10"></div>
-          <div className="text-4xl py-3 text-center">We Create Stories</div>
-          <div className="flex border-t-4 flex-grow w-[80%] feature:w-[20%] border-slate-600 mx-10"></div>
-        </div>
+        <Stories />
 
-        {/* review section */}
-        <ReviewCarousel />
-
-        <div className="relative flex flex-col h-full w-full">
-          <img
-            className="w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Wedding"
-          />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-30 gap-y-2">
-            <div className="text-3xl md:text-5xl font-serif drop-shadow-md   feature:pb-4">
-              <div >
-                Make your wedding
-              </div>
-              <div>
-                dreams come true
-              </div>
-            </div>
-            <div className="text-sm sm:text-base md:text-lg lg:text-xl px-4">
-              We will take care of everything for you — from event planning and curation to design and production
-            </div>
-            <button className="bg-black px-4 py-2 sm:px-6 sm:py-3 mt-4 hover:bg-slate-700 transition duration-200 font-thin">
-              GET IN TOUCH
-            </button>
-          </div>
-        </div>
 
       </div >
     </div >
