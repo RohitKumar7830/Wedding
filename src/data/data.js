@@ -1112,3 +1112,60 @@ export const weddingGalleryData = [
     ]
   }
 ];
+
+export const teamMembers = [
+  {
+    name: 'Mila Thomson',
+    role: 'CEO, Creative Director',
+    image:
+      'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
+    linkedin: 'https://linkedin.com/in/milathomson',
+    twitter: 'https://twitter.com/milathomson',
+    instagram: 'https://instagram.com/milathomson'
+  },
+  {
+    name: 'John Collins',
+    role: 'Design Director',
+    image:
+      'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
+    linkedin: 'https://linkedin.com/in/johncollins',
+    twitter: 'https://twitter.com/johncollins',
+    instagram: 'https://instagram.com/johncollins'
+  },
+  {
+    name: 'Andre Jackson',
+    role: 'Director of Photography',
+    image:
+      'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400',
+    linkedin: 'https://linkedin.com/in/andrejackson',
+    twitter: 'https://twitter.com/andrejackson',
+    instagram: 'https://instagram.com/andrejackson'
+  },
+  {
+    name: 'Sara Lee',
+    role: 'Event Coordinator',
+    image:
+      'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=400',
+    linkedin: 'https://linkedin.com/in/saralee',
+    twitter: 'https://twitter.com/saralee',
+    instagram: 'https://instagram.com/saralee'
+  },
+  {
+    name: 'Michael Chen',
+    role: 'Technical Director',
+    image:
+      'https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=400',
+    linkedin: 'https://linkedin.com/in/michaelchen',
+    twitter: 'https://twitter.com/michaelchen',
+    instagram: 'https://instagram.com/michaelchen'
+  },
+  {
+    name: 'Emma Rodriguez',
+    role: 'Marketing Specialist',
+    image:
+      'https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=400',
+    linkedin: 'https://linkedin.com/in/emmarodriguez',
+    twitter: 'https://twitter.com/emmarodriguez',
+    instagram: 'https://instagram.com/emmarodriguez'
+  }
+];

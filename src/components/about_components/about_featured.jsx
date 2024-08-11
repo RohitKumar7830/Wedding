@@ -10,9 +10,9 @@ export const AboutFeatured = () => {
 
       <AboutText />
 
-      {/* <Team />
+      <Team />
 
-      <Stories /> */}
+      {/* <Stories /> */}
 
     </div>
   )
