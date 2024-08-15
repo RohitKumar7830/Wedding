@@ -20,7 +20,7 @@ import { useState } from 'react';
 import { Data, CardsData } from '@/data/data';
 
 export const ServicesComponent = () => {
-  const [locationData, setLocationData] = useState(Data)
+  const [locationData] = useState(Data);
   const [cardsData, setCardsData] = useState(CardsData)
 
   const location = useLocation()
